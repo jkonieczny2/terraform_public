@@ -1,0 +1,6 @@
+**/*.swp
+**/.terraform/*
+vendors/aws/environments/prod/backend.s3.tfbackend
+vendors/aws/environments/prod/admin.auto.tfvars
+**/.terraform.lock.hcl
+**/__pycache__

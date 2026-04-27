@@ -1,0 +1,10 @@
+# Copy to admin.auto.tfvars (gitignored) and adjust, or set TF_VAR_*.
+# CIDR: example uses TEST-NET-3; replace with yours.
+admin_ingress_cidr_ipv4 = "203.0.113.1/32"
+
+# TCP ports open to the CIDR above (map values are port numbers; keys are for Terraform only).
+admin_ingress_tcp_ports = {
+  ssh                       = 22
+  default_k8s_load_balancer = 9376
+  kube_apiserver            = 6443
+}

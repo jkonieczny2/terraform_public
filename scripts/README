@@ -1,0 +1,5 @@
+Leverages AWS secrets manager to retrieve terraform access key.
+
+Cannot retrieve secret from Bash, so we have authenticate.py print the access keys to stdout
+
+setup.sh wrapper script evaluates the output of authenticate.py as a bash command
